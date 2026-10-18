@@ -1,33 +1,33 @@
 # WebPDF Studio PRO — Official Downloads
 
 **Zero-upload, client-side PDF & Office suite for Windows.**
-Hiçbir PDF/Office dosyanız bilgisayarınızdan çıkmaz.
+None of your PDF/Office files ever leave your computer.
 
-👉 **Kurulum dosyaları için sağ taraftaki [Releases](../../releases/latest) bölümüne gidin.**
+👉 **To download the installers, go to the [Releases](../../releases/latest) section on the right.**
 
 ---
 
-## ⬇️ İndirme
+## ⬇️ Download
 
-| Dosya | Ne zaman kullanılır |
+| File | When to use it |
 |---|---|
-| **WebPDF-Studio-Pro-Setup-x.y.z.exe** | Normal kurulum. Başlat menüsü + masaüstü kısayolu oluşturur, kaldırma desteği vardır. |
-| **WebPDF-Studio-Pro-Portable-x.y.z.exe** | Kurulum istemeyenler için tek dosya. USB bellekten bile çalışır. |
+| **WebPDF-Studio-Pro-Setup-x.y.z.exe** | Standard installation. Creates Start Menu + desktop shortcuts and includes an uninstaller. |
+| **WebPDF-Studio-Pro-Portable-x.y.z.exe** | Single file for anyone who does not want an installation. It even runs from a USB stick. |
 
-### Windows SmartScreen uyarısı — normaldir
+### Windows SmartScreen warning — this is expected
 
-Uygulama ticari kod imzalama sertifikası (EV code signing) ile imzalanmadığı için
-Windows ilk çalıştırmada şu uyarıyı gösterebilir:
+Because the app is not signed with a commercial EV code-signing certificate,
+Windows may show the following warning on first launch:
 
-> *"Windows, bilgisayarınızı korudu — Windows Defender SmartScreen tanınmayan bir uygulamayı engelledi."*
+> *"Windows protected your PC — Windows Defender SmartScreen prevented an unrecognized app from starting."*
 
-Devam etmek için: **Ek bilgi → Yine de çalıştır**.
-Bu uyarı, dosyanın zararlı olduğu anlamına gelmez; yalnızca yayıncının Microsoft
-tarafından henüz "tanınmadığı" anlamına gelir. İmzalı bir sürüm ileride eklenecektir.
+To continue: **More info → Run anyway**.
+This warning does not mean the file is malicious; it only means the publisher is
+not yet recognized by Microsoft. A signed build will be added in the future.
 
-### Dosyanın bozulmadığını doğrulama
+### Verify the file is intact
 
-Kurulum sayfasında yayınlanan `SHA-256` değeri ile karşılaştırabilirsiniz:
+Compare it with the `SHA-256` value published on the release page:
 
 ```powershell
 Get-FileHash .\WebPDF-Studio-Pro-Setup-2.4.0.exe -Algorithm SHA256
@@ -35,27 +35,27 @@ Get-FileHash .\WebPDF-Studio-Pro-Setup-2.4.0.exe -Algorithm SHA256
 
 ---
 
-## 🔒 Neden bu depoda kaynak kod yok?
+## 🔒 Why is there no source code in this repository?
 
-- Bu depo **yalnızca derlenmiş kurulum dosyalarını** barındırır.
-- Kaynak kodu **private** bir depoda tutulur; kopyalanması ve yeniden dağıtılması
-  lisans gereği yasaktır.
-- Uygulama tamamen **çevrimdışı** çalışır: harici AI/LLM servisi, OCR bulutu veya
-  dosya yükleme uç noktası içermez.
+- This repository hosts **compiled installers only**.
+- The source code is kept in a **private** repository; copying or redistributing
+  it is prohibited under the license.
+- The application runs **fully offline**: it contains no external AI/LLM service,
+  no OCR cloud, and no file-upload endpoint.
 
-## 💳 Lisans
+## 💳 License
 
 Commercial Lifetime — **€29** · [mavvi.online](https://mavvi.online)
 
-Satın alma sonrası lisans anahtarı uygulama içindeki **License** ekranından
-girilir; doğrulama bir kez yapılıp cihazda imzalı olarak önbelleğe alınır.
+After purchase, the license key is entered in the **License** screen inside the
+app; it is verified once and then cached on the device as a signed token.
 
-## 🐞 Sorun bildirimi
+## 🐞 Bug reports
 
-Kurulum/çalıştırma sorunları için bu depoda **Issues** açabilirsiniz.
-Lütfen sürüm numarasını, Windows sürümünü ve ekran görüntüsünü ekleyin.
+For installation or runtime problems you can open an **Issue** in this repository.
+Please include the version number, your Windows version, and a screenshot.
 
 ---
 
 *Copyright © 2026 mavvi.online / smnlcm — All rights reserved.*
-*Kaynak kod yayınlanmaz. Yeniden dağıtım yasaktır.*
+*Source code is not published. Redistribution is prohibited.*
