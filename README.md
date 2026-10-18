@@ -30,7 +30,7 @@ not yet recognized by Microsoft. A signed build will be added in the future.
 Compare it with the `SHA-256` value published on the release page:
 
 ```powershell
-Get-FileHash .\WebPDF-Studio-Pro-Setup-2.4.0.exe -Algorithm SHA256
+Get-FileHash .\WebPDF-Studio-Pro-Setup-2.4.2.exe -Algorithm SHA256
 ```
 
 ---
